@@ -1,0 +1,29 @@
+.albumView{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.albumView img{
+    width: 100px;
+}
+
+.album-header{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.album-songs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.album-songs div{
+    cursor: pointer;
+}

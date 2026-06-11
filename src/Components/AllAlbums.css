@@ -1,0 +1,12 @@
+.allAlbums{
+    width: 100%;
+    margin: 10px 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.all-albums{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

@@ -1,0 +1,13 @@
+.songRow{
+    display: grid;
+    grid-template-columns: 60px 1fr 200px;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.songRow img{
+    width: 40px;
+    border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+.album-cards{
+    background: #505050;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 170px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.album-cards h4, p{
+    margin: 0;
+}
+
+.album-cards img{
+    width: 80px;
+    border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+.main{
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.recent, .trending, .discover{
+    margin: 20px;
+}
+
+.section-title{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.section-title img{
+    filter: invert(1);
+}
+
+.recent-cards, .trending-cards, .discover-cards{
+    display: flex;
+    gap: 20px;
+}

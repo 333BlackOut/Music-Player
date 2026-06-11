@@ -1,0 +1,22 @@
+.song-cards{
+    background: #505050;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 180px;
+    padding: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.song-cards h4, p{
+    margin: 0;
+}
+
+.song-cards img{
+    width: 80px;
+    border-radius: 10px;
+}

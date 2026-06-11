@@ -1,0 +1,111 @@
+.aside{
+    background: #303030;
+    padding: 20px 50px;
+    width: 200px;
+    height: 100%;
+    position: relative;
+}
+
+.menu-icon{
+    filter: invert(1);
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    z-index: 10;
+}
+
+.aside-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.user-account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #505050;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.user-account img{
+    filter: invert(1);
+    width: 100px;
+}
+
+.user-lists h3{
+    cursor: pointer;
+}
+
+.contact-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-aside a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1200px){
+    .aside{
+        width: 120px;
+        padding: 20px 30px;
+    }
+    .user-account{
+        width: 120px;
+        height: 120px;
+    }
+    .user-account img{
+        width: 80px;
+    }
+}
+
+@media (max-width: 750px){
+    .aside{
+        width: 100px;
+        padding: 15px 25px;
+    }
+    .user-account{
+        width: 100px;
+        height: 100px;
+    }
+    .user-account img{
+        width: 70px;
+    }
+}
+
+@media (max-width: 640px){
+    .aside-menu{
+        height: 90%;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+    .aside-menu.open{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .aside{
+        padding: 20px 20px;
+        width: 30px;
+        transition: width 0.3s ease;
+    }
+    .aside.open{
+        width: 100px;
+    }
+    .menu-icon{
+        display: inherit;
+    }
+}
